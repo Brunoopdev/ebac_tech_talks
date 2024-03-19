@@ -1,6 +1,6 @@
 AOS.init();
 
-const dataDoEvento = new Date("mar 20, 2024 19:00:00");
+const dataDoEvento = new Date("Mar 20, 2024 19:00:00");
 const timeStampDoEvento = dataDoEvento.getTime();
 
 const contaAsHoras = setInterval( () => {
@@ -15,7 +15,7 @@ const contaAsHoras = setInterval( () => {
     const segundoEmMS = 1000;
     
     const diasAteOEvento = Math.floor(distanciaAteOEvento / diaEmMs);
-    const horasAteOEvento = Math.floor((distanciaAteOEvento % horaEmMs) /horaEmMs);
+    const horasAteOEvento = Math.floor((distanciaAteOEvento % horaEmMs) / horaEmMs);
     const minutosAteOEvento = Math.floor((distanciaAteOEvento % minutoEmMs) / minutoEmMs);
     const segundosAteOEvento = Math.floor((distanciaAteOEvento % segundoEmMS) / segundoEmMS);
 
